@@ -1,0 +1,44 @@
+## Npm init to initialize the Node into the folder and create package.json files
+You can create scripts inside package.json to give commands which can be executed by using "npm run scriptname"
+
+
+#Video 4
+const varibale = require (./path)
+#now we can perform functions like variable(params) to send parameters to the module function
+#if multiple functions are exported default... then the last function will be exported from that file due to value overriding
+# to avoid conflict , we export an object instead
+# else we can destrucutre and directly import the desired functions whcih can be directly invoked later on
+
+
+#video 5
+File Handlin in Node
+# const fs = require("fs"); //File handling library
+writeFileSync (file, data, options?:)
+#file = path to the file
+#data =  string content of the file
+# rerunning the command with different instructions will result in overriding
+
+readFileSync (file, encoding)
+#async read file: 3rd param as a function (err, result) 
+# Keep the value in a variable and perform actions to it.
+
+readFileSync (file, encoding)
+#async read file: 3rd param as a function (err, result) 
+# async doesnt return anything hence we have to add a callback function to get the result.
+
+appendFileSync (file, data, options?:)
+
+
+
+#video 7
+Https Server basics
+# const http = require('http');
+# const myServer = http.createServer((req, res) => {
+#     res.end("Hello From Server");
+# });
+# myServer.listen(3000, "127.0.0.1", () => {
+#     console.log("Server is running on port 3000");
+# });
+
+
+#video 8  URLs
